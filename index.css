@@ -76,3 +76,49 @@ main{
     border: none;
     box-shadow: 0 0 15px darkred;
 }
+
+/*pulsing animation*/
+
+.pulsing{
+    position: relative;
+    top: -170px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff056d;
+    box-shadow: 0 0 0 0 #ff056da8;
+    animation: pulsing 1.5s linear infinite;
+}
+@keyframes pulsing {
+    100% {
+        box-shadow: 0 0 0 20px #ff056d0c;
+        filter: hue-rotate(360deg);
+    }
+    0%{
+        filter: hue-rotate(0deg);
+    }
+}
+.pulsing::before, .pulsing::after{
+    position: absolute;
+    content: "";
+    box-shadow: 0 0 0 0 #ff056d6d;
+    border-radius: inherit;
+    inset: 0;
+    animation: inherit;
+}
+.pulsing::after{
+    animation-delay: -1s;
+
+}
+
+/*youtube icon*/
+
+.fa-youtube{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    top: 33px;
+    right: 445px;
+    opacity: 50%;
+}

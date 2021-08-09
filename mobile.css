@@ -1,3 +1,9 @@
+@media (max-width:768px){
+    .fa-youtube{
+        right: 200px;
+    }
+}
+
 @media (max-width:425px){
 
     .container{
@@ -18,6 +24,13 @@
         margin: 5px;
         padding: 8px 15px;
     }
+    .pulsing{
+        top: -160px;
+        left: 0;
+    }
+    .fa-youtube{
+        right: 50px;
+    }
 }
 
 @media (max-width: 375px){
@@ -34,6 +47,14 @@
     .button-container .btn{
         margin-top: 0px;
         padding: 10px 13px;
+    }
+    .pulsing{
+        top: -160px;
+        left: 20px;
+    }
+    .fa-youtube{
+        top: 28px;
+        right: 50px;
     }
 }
 
@@ -61,5 +82,13 @@
         padding: 12px 12px;
         margin-left: 5px;
         margin-top: 0px;
+    }
+    .pulsing{
+        top: -140px;
+        left: 30px;
+    }
+    .fa-youtube{
+        top: 38px;
+        right: 50px;
     }
 }
